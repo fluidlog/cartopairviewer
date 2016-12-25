@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Carto PAIR Viewer</title>
+
+  <link rel="stylesheet" type="text/css" href="assets/fluidgraph/css/fluidgraph.css" />
+
+  <!--[if lt IE 11]>
+        Votre navigateur est obsolète.
+        Merci d'utiliser un navigateur récent : IE 11 (min), Firefox, Chrome ou Safari
+        <![endif]-->
+
+  <script src="assets/fluidgraph/library/jquery-2.1.4.min.js"></script>
+  <script src="assets/fluidgraph/library/d3.v3.min.js"></script>
+  <script src="assets/fluidgraph/library/jquery.mockjax.min.js"></script>
+  <script src="assets/fluidgraph/library/FileSaver.min.js"></script>
+  <script src="assets/LDP-framework/mystore.js"></script>
+
+  <script src="assets/fluidgraph/library/semantic2.2.js"></script>
+  <link rel="stylesheet" href="assets/fluidgraph/css/semantic2.2.css" />
+
+</head>
+
+<body style="margin:20px">
+
+<div>
+  <h1>Carto PAIR Viewer</h1>
+</div>
+
+<div class="ui tabular menu" id="menuTabs">
+    <a class="item" data-tab="local">Local Store</a>
+    <a class="active item" data-tab="external">External Store</a>
+</div>
+
+<div class="ui tab segment" data-tab="local">
+  <div class="ui special cards" id="divLocalCards"></div>
+</div>
+</div>
+<div class="ui active tab segment" data-tab="external">
+  <div class="ui special cards" id="divExternalCards"></div>
+  <div class="ui message gray" id="message"></div>
+</div>
+
+<script src="assets/fluidgraph/app/mockdata.js"></script>
+<script src="assets/fluidgraph/app/init.js"></script>
+<script src="assets/fluidgraph/app/mygraph.js"></script>
+<script src="assets/fluidgraph/app/mynodes.js"></script>
+<script src="assets/fluidgraph/app/mylinks.js"></script>
+<script src="assets/fluidgraph/app/mybackground.js"></script>
+<script src="assets/fluidgraph/app/convert.js"></script>
+<script src="assets/fluidgraph/app/myviewer.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
